@@ -1,0 +1,156 @@
+/* Reset some basic styles */
+body, ul {
+    margin: 0;                                /* Removes default margin */
+    padding: 0;                               /* Removes default padding */
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda SC', serif;
+    color: #333;
+    list-style-type: none;     
+}
+
+/* Sets details */
+section {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;          /* Space between the profile and navigation */
+    align-items: center;                     /* Center items vertically */
+    background-color: #333;
+    padding: 15px 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;                        /* Removes bullet points */
+    display: flex;                           /* Flexbox layout for the links */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+.section-summary, .section-skills, .section-experience, .section-education {
+    background-color: #f5ede6;   
+}
+
+.section-summary .image-aspect, .section-skills .image-aspect, .section-experience .image-aspect, .section-education .image-aspect {
+    flex: 1;
+    padding: 0; 
+}
+
+.section-summary .content-aspect, .section-skills .content-aspect, .section-experience .content-aspect, .section-education .content-aspect {
+    flex: 1;
+    padding-right: 0;
+    width: 100%;
+}
+
+.section-summary img, .section-skills img, .section-experience img, .section-education img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+h2 {
+    font-size: 4em;
+    margin-bottom: 140px;
+    margin-left: 85px;
+    display: flex;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-family: "DM Serif Text", serif;
+    margin-left: 85px;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    margin-left: 85px;
+    margin-right: 85px;
+    font-family: "DM Serif Text", serif;
+}
+
+.section-contact {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.section-contact h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.section-skills .skills-list, .section-experience .experience-list, .section-education .experience-list {
+    list-style: square;
+    margin: 20px 0;
+    padding-left: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    font-family: "DM Serif Text", serif;
+}
+
+.steps {
+    display: flex;                      /* Enable flexbox layout to allow responsive layout */
+    justify-content: space-around;      /* Distribute items evenly with space around */
+    flex-wrap: wrap;                    /* Wrap items onto multiple lines */
+}
+
+/* Individual step item */
+.step {
+    flex: 1;                            /* Each step takes up equal space */
+    min-width: 250px;                   /* Set a min width for readability */
+    margin-bottom: 20px;                /* Add space below each step */
+}
+
+/* Styling for the headings within each step */
+.step h3 {
+    font-size: 2.5em;                   /* Increase font size of headings */
+    margin-bottom: 10px;                /* Add space below the heading */
+}
+
+/* Styling for paragraphs within each step */
+.step p {
+    font-size: 1.2em;                   /* Increase font size for readability */
+    font-weight: 300;                   /* Use a light font weight */
+}
+
+/* Styling for specific text spans within each step */
+.step span {
+    font-weight: bold;                  /* Set the text as bold */
+}
+
+
